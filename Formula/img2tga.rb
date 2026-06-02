@@ -14,6 +14,6 @@ class Img2tga < Formula
   end
 
   test do
-    shell_output("#{bin}/img2tga", 1)
+    shell_output(bin/"img2tga", 1)
   end
 end

@@ -14,6 +14,6 @@ class Gftcpp < Formula
   end
 
   test do
-    assert_match "usage", shell_output("#{bin}/gftcpp", 1)
+    assert_match "usage", shell_output(bin/"gftcpp", 1)
   end
 end

@@ -14,6 +14,6 @@ class Mp3packercpp < Formula
   end
 
   test do
-    assert_match "mp3packer", shell_output("#{bin}/mp3packercpp --help", 0)
+    assert_match "mp3packer", shell_output(bin/"mp3packercpp", "--help")
   end
 end

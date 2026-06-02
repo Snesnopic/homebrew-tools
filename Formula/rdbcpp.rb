@@ -14,6 +14,6 @@ class Rdbcpp < Formula
   end
 
   test do
-    assert_match "usage", shell_output("#{bin}/rdbcpp", 1)
+    assert_match "usage", shell_output(bin/"rdbcpp", 1)
   end
 end
