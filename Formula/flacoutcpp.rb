@@ -12,7 +12,7 @@ class Flacoutcpp < Formula
   def install
     system "cmake", "-S", ".", "-B", "build", *std_cmake_args
     system "cmake", "--build", "build"
-    system "cmake", "--install", "build"
+    bin.install "build/flacoutcpp"
   end
 
   test do
