@@ -1,8 +1,10 @@
 class Flacoutcpp < Formula
   desc "C++ recreation of flacout for FLAC recompression"
   homepage "https://github.com/Snesnopic/flacoutcpp"
-  url "https://github.com/Snesnopic/flacoutcpp/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "d2b7fd022c4f76c82a489c7707513ce210b1d56d83e0ed5c8f037b4cdf093a55"
+  url "https://github.com/Snesnopic/flacoutcpp.git",
+      tag:      "v1.0.0",
+      using:    :git,
+      submodules: true
   license "MIT"
 
   depends_on "cmake" => :build
@@ -14,6 +16,6 @@ class Flacoutcpp < Formula
   end
 
   test do
-    assert_match "Usage", shell_output(bin/"flacoutcpp", 255)
+    assert_match "Usage", shell_output(bin/"flacoutcpp", 1)
   end
 end
