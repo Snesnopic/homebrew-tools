@@ -1,7 +1,7 @@
 class Chsl < Formula
-  desc "Experimental project aiming to recreate the functionality of FileOptimizer"
+  desc "Lossless file optimizer, supporting 160+ types, multithreading and recursive optimization (files inside other files)"
   homepage "https://github.com/Snesnopic/chisel"
-  version "1.6.0"
+  version "1.7.0"
   license "MIT"
 
   head "https://github.com/Snesnopic/chisel.git", branch: "main"
@@ -10,17 +10,17 @@ class Chsl < Formula
   depends_on "rust" => :build
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/Snesnopic/chisel/releases/download/v1.6.0/chsl-macos-arm64.tar.gz"
-    sha256 "f393419996284d25def0dd2d4c0e76981eb74cb442e349d16f4ffe56021df8e3"
+    url "https://github.com/Snesnopic/chisel/releases/download/v1.7.0/chsl-macos-arm64.tar.gz"
+    sha256 "e9274fc8ba35f2a471d25103d9da40144ba765097a1ee1c882b40ccf517dd08a"
   elsif OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/Snesnopic/chisel/releases/download/v1.6.0/chsl-macos-x64.tar.gz"
-    sha256 "bb917dc34011b49eb368f9f17a7370dbaa44edd0a9c34c421fa888f189d7cad9"
+    url "https://github.com/Snesnopic/chisel/releases/download/v1.7.0/chsl-macos-x64.tar.gz"
+    sha256 "c638cb114434de8064a0820eb8b81f5d128a7145a844ed9478ff28611b9f5d97"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/Snesnopic/chisel/releases/download/v1.6.0/chsl-linux-x64-gcc.tar.gz"
-    sha256 "46e5ffd34749cb7f5ca7a8efd37291e6b0ff52ff82244906eb137f76f3cff39e"
+    url "https://github.com/Snesnopic/chisel/releases/download/v1.7.0/chsl-linux-x64-gcc.tar.gz"
+    sha256 "42aeed65c8da491ac6b882c2de1cf113eb3416c77f7ad18ea325e64cdd9f4086"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/Snesnopic/chisel/releases/download/v1.6.0/chsl-linux-arm64.tar.gz"
-    sha256 "8ab6678ddf515381190ee36d254f9327ec67ecfdb99de4616a2a90eeb25fc791"
+    url "https://github.com/Snesnopic/chisel/releases/download/v1.7.0/chsl-linux-arm64.tar.gz"
+    sha256 "d033007fdac5c00141fa201e8ef1947275843ca91047b7af350fcf01251c0bd7"
   end
 
   def install
