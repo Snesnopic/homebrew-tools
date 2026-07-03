@@ -1,8 +1,8 @@
 class Qadmimes < Formula
   desc "Simple utility to determine file types"
   homepage "https://github.com/Snesnopic/qadmimes"
-  url "https://github.com/Snesnopic/qadmimes/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "2f56cfaf3c57462e99efea459a41c46cbfd99b13bc8074c2b6319e2e44851ac0"
+  url "https://github.com/Snesnopic/qadmimes/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "17e6f4b226354c5b2a26cf3d453e260670a4ef0462b12a5fb68bbb45f7d2b202"
   license "MIT"
 
   depends_on "cmake" => :build
