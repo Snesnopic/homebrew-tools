@@ -1,5 +1,5 @@
 class Vbrfix < Formula
-  desc "Repair MP3 Variable Bit Rate (VBR) headers to fix seek issues"
+  desc "Simple utility to repair MP3 VBR file headers to fix seek issues"
   homepage "https://github.com/Snesnopic/vbrfix"
   url "https://github.com/Snesnopic/vbrfix/archive/refs/tags/v1.0.0.tar.gz"
   sha256 "0c5b9b74be1c41741b33b44c4965040f72ddb26b1b4407fd657f08c6fee9f7b1"

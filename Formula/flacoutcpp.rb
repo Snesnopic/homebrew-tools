@@ -1,5 +1,5 @@
 class Flacoutcpp < Formula
-  desc "C++ recreation of flacout for FLAC recompression"
+  desc "Recompress FLAC files to the smallest possible"
   homepage "https://github.com/Snesnopic/flacoutcpp"
   url "https://github.com/Snesnopic/flacoutcpp.git",
       tag:      "v1.1.0",

@@ -1,11 +1,11 @@
 class Mseedout < Formula
-  desc "Recompress miniSEED files to the smallest possible valid output using dynamic programming"
+  desc "Recompress miniSEED files to the smallest possible"
   homepage "https://github.com/Snesnopic/mseedout"
-    url "https://github.com/Snesnopic/mseedout.git",
-        tag:      "v1.0.0",
-        using:    :git,
-        submodules: true
-    license "MIT"
+   url "https://github.com/Snesnopic/mseedout.git",
+      tag:      "v1.0.0",
+      using:    :git,
+      submodules: true
+   license "MIT"
 
   depends_on "cmake" => :build
 
