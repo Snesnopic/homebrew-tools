@@ -1,8 +1,8 @@
 class Img2tga < Formula
   desc "Simple utility to convert images to TGA format"
   homepage "https://github.com/Snesnopic/img2tga"
-  url "https://github.com/Snesnopic/img2tga/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "f976e2be94c6c61245580ee3a7cc441c12804240da8b8495ca9c61d1e8549402"
+  url "https://github.com/Snesnopic/img2tga/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "4715c185f4e25746c79e8ededb67707bbfea5e187d0cab47129b3a0111eea659"
   license "MIT"
 
   depends_on "cmake" => :build
