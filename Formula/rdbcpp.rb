@@ -1,8 +1,8 @@
 class Rdbcpp < Formula
   desc "Tencent RDB archive packer/unpacker"
   homepage "https://github.com/Snesnopic/rdbcpp"
-  url "https://github.com/Snesnopic/rdbcpp/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "767a305ebc6939615159719f590b24ff9c1021a9ca3dade711c1671f2bce0f0e"
+  url "https://github.com/Snesnopic/rdbcpp/archive/refs/tags/v1.0.1.tar.gz"
+  sha256 "e8e491cf2bbe4825d03a728d01b649f6ab7d05f90f712b4ff13ed312d925b773"
   license "MIT"
 
   depends_on "cmake" => :build
@@ -14,6 +14,7 @@ class Rdbcpp < Formula
   end
 
   test do
-    assert_match "usage", shell_output(bin/"rdbcpp", 1)
+    assert_match version.to_s, shell_output("#{bin}/rdbcpp --version")
+    assert_match "usage", shell_output("#{bin}/rdbcpp --help")
   end
 end
