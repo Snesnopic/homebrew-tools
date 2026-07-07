@@ -1,8 +1,8 @@
 class Gftcpp < Formula
   desc "Tencent GFT image container packer/unpacker"
   homepage "https://github.com/Snesnopic/gftcpp"
-  url "https://github.com/Snesnopic/gftcpp/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "fde3363d3cb419365c7077e6e77763483b9e303d0f06dd9e77bd9ea483c7d82f"
+  url "https://github.com/Snesnopic/gftcpp/archive/refs/tags/v1.0.1.tar.gz"
+  sha256 "571db1e88fb43071e64d5ad8e164ad0aa3f05cfdc038343b5a212de55ecd961e"
   license "MIT"
 
   depends_on "cmake" => :build
@@ -14,6 +14,7 @@ class Gftcpp < Formula
   end
 
   test do
-    assert_match "usage", shell_output(bin/"gftcpp", 1)
+    assert_match version.to_s, shell_output("#{bin}/gftcpp --version")
+    assert_match "usage", shell_output("#{bin}/gftcpp --help")
   end
 end
