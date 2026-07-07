@@ -1,8 +1,8 @@
 class Vbrfix < Formula
   desc "Simple utility to repair MP3 VBR file headers to fix seek issues"
   homepage "https://github.com/Snesnopic/vbrfix"
-  url "https://github.com/Snesnopic/vbrfix/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "0c5b9b74be1c41741b33b44c4965040f72ddb26b1b4407fd657f08c6fee9f7b1"
+  url "https://github.com/Snesnopic/vbrfix/archive/refs/tags/v0.34.tar.gz"
+  sha256 "c1cd40c74df9cc60c7fdb8934d99cef1d745bc1d7826784f2fbc233b07460a19"
   license "GPL-2.0-or-later"
 
   depends_on "cmake" => :build
@@ -14,6 +14,7 @@ class Vbrfix < Formula
   end
 
   test do
-    assert_match "Usage", shell_output(bin/"vbrfix", 255)
+    assert_match version.to_s, shell_output("#{bin}/vbrfix --version")
+    assert_match "Usage", shell_output("#{bin}/vbrfix --help")
   end
 end
