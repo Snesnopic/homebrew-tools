@@ -2,7 +2,7 @@ class Flacoutcpp < Formula
   desc "Recompress FLAC files to the smallest possible"
   homepage "https://github.com/Snesnopic/flacoutcpp"
   url "https://github.com/Snesnopic/flacoutcpp.git",
-      tag:      "v1.1.0",
+      tag:      "v1.1.1",
       using:    :git,
       submodules: true
   license "MIT"
@@ -16,6 +16,7 @@ class Flacoutcpp < Formula
   end
 
   test do
-    assert_match "Usage", shell_output(bin/"flacoutcpp", 1)
+    assert_match version.to_s, shell_output("#{bin}/flacoutcpp --version")
+    assert_match "Usage", shell_output("#{bin}/flacoutcpp --help 2>&1")
   end
 end
