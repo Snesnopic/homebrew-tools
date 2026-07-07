@@ -1,8 +1,8 @@
 class Img2tga < Formula
   desc "Simple utility to convert images to TGA format"
   homepage "https://github.com/Snesnopic/img2tga"
-  url "https://github.com/Snesnopic/img2tga/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "4715c185f4e25746c79e8ededb67707bbfea5e187d0cab47129b3a0111eea659"
+  url "https://github.com/Snesnopic/img2tga/archive/refs/tags/v1.1.1.tar.gz"
+  sha256 "9805e540cc9effa313c366bce319fcf1c4113e93f068e0639a45ba35e5f78e1a"
   license "MIT"
 
   depends_on "cmake" => :build
@@ -14,6 +14,7 @@ class Img2tga < Formula
   end
 
   test do
-    shell_output(bin/"img2tga", 1)
+    assert_match version.to_s, shell_output("#{bin}/img2tga --version")
+    assert_match "Usage", shell_output("#{bin}/img2tga --help 2>&1")
   end
 end
