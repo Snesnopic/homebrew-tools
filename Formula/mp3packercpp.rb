@@ -1,8 +1,8 @@
 class Mp3packercpp < Formula
   desc "C++ port of mp3packer for lossless MP3 optimization"
   homepage "https://github.com/Snesnopic/mp3packercpp"
-  url "https://github.com/Snesnopic/mp3packercpp/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "69cad357561fbb3b13d694b389b3e8f78c5b24bb543947278bad3c2ba1b2780d"
+  url "https://github.com/Snesnopic/mp3packercpp/archive/refs/tags/v1.1.1.tar.gz"
+  sha256 "2477fc44a3276eb0d5543f81678b6ba0f78eb13ead2ea2c01222add74cc69a1d"
   license "MIT"
 
   depends_on "cmake" => :build
@@ -14,6 +14,7 @@ class Mp3packercpp < Formula
   end
 
   test do
-    assert_match "mp3packer", shell_output(bin/"mp3packercpp", "--help")
+    assert_match version.to_s, shell_output("#{bin}/mp3packercpp --version")
+    assert_match "Usage", shell_output("#{bin}/mp3packercpp --help")
   end
 end
