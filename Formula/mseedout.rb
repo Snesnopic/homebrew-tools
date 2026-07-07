@@ -2,7 +2,7 @@ class Mseedout < Formula
   desc "Recompress miniSEED files to the smallest possible"
   homepage "https://github.com/Snesnopic/mseedout"
    url "https://github.com/Snesnopic/mseedout.git",
-      tag:      "v1.0.0",
+      tag:      "v1.0.1",
       using:    :git,
       submodules: true
    license "MIT"
@@ -16,6 +16,7 @@ class Mseedout < Formula
   end
 
   test do
-    assert_match "Usage", shell_output(bin/"mseedout", 255)
+    assert_match version.to_s, shell_output("#{bin}/mseedout --version")
+    assert_match "Usage", shell_output("#{bin}/mseedout --help 2>&1")
   end
 end
