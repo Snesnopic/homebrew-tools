@@ -2,7 +2,7 @@ class Mseedout < Formula
   desc "Recompress miniSEED files to the smallest possible"
   homepage "https://github.com/Snesnopic/mseedout"
    url "https://github.com/Snesnopic/mseedout.git",
-      tag:      "v1.0.1",
+      tag:      "v1.1.0",
       using:    :git,
       submodules: true
    license "MIT"
