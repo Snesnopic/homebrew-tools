@@ -1,8 +1,8 @@
 class Mp3packercpp < Formula
   desc "C++ port of mp3packer for lossless MP3 optimization"
   homepage "https://github.com/Snesnopic/mp3packercpp"
-  url "https://github.com/Snesnopic/mp3packercpp/archive/refs/tags/v1.1.1.tar.gz"
-  sha256 "2477fc44a3276eb0d5543f81678b6ba0f78eb13ead2ea2c01222add74cc69a1d"
+  url "https://github.com/Snesnopic/mp3packercpp/archive/refs/tags/v1.2.0.tar.gz"
+  sha256 "c6e59906860a5b07df711c7c983db8e841396429a5c8df071c386e4efe85a38b"
   license "MIT"
 
   depends_on "cmake" => :build
