@@ -2,7 +2,7 @@ class Flacoutcpp < Formula
   desc "Recompress FLAC files to the smallest possible"
   homepage "https://github.com/Snesnopic/flacoutcpp"
   url "https://github.com/Snesnopic/flacoutcpp.git",
-      tag:      "v1.2.0",
+      tag:      "v1.3.0",
       using:    :git,
       submodules: true
   license "MIT"
