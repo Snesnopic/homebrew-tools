@@ -1,7 +1,7 @@
 class Chsl < Formula
   desc "Lossless file optimizer, supporting 160+ types, multithreading and recursive optimization (files inside other files)"
   homepage "https://github.com/Snesnopic/chisel"
-  version "1.12.0"
+  version "untagged-d987cb9baba9aa1624be"
   license "MIT"
 
   head "https://github.com/Snesnopic/chisel.git", branch: "main"
@@ -10,17 +10,17 @@ class Chsl < Formula
   depends_on "rust" => :build
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/Snesnopic/chisel/releases/download/v1.12.0/chsl-macos-arm64.tar.gz"
-    sha256 "58af633350c3708a188e61b0db66314c9abb5613242f09825cf6e9f719a97022"
+    url "https://github.com/Snesnopic/chisel/releases/download/untagged-d987cb9baba9aa1624be/chsl-macos-arm64.tar.gz"
+    sha256 "aff0e16aeb1bc8b720fb2b99877e3900b67462e2ea800d2e9484baea53c8b2cc"
   elsif OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/Snesnopic/chisel/releases/download/v1.12.0/chsl-macos-x64.tar.gz"
-    sha256 "d4ab9a2dbe3def0e90722031603a916f45a189bc685b180ea00da6cd73f20a10"
+    url "https://github.com/Snesnopic/chisel/releases/download/untagged-d987cb9baba9aa1624be/chsl-macos-x64.tar.gz"
+    sha256 "7d9e23fbb16d8f455b9f7eeec0b6ab05c0351cde8ff488c5a3d993e5bf2ebf69"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/Snesnopic/chisel/releases/download/v1.12.0/chsl-linux-x64-gcc.tar.gz"
-    sha256 "e7d2ea87985ab061e86c74c63a523d21d4de13ddff4d17caf23aa98889990355"
+    url "https://github.com/Snesnopic/chisel/releases/download/untagged-d987cb9baba9aa1624be/chsl-linux-x64-gcc.tar.gz"
+    sha256 "60d8dd11af9c16db5d40e51fe5e2b9327d5eecdffe346618fc068ee5df17a532"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/Snesnopic/chisel/releases/download/v1.12.0/chsl-linux-arm64.tar.gz"
-    sha256 "ec4c008be6bfea7bedc178dc731f7f1558c81eba3f7fdc6335fb56af43ac6bfe"
+    url "https://github.com/Snesnopic/chisel/releases/download/untagged-d987cb9baba9aa1624be/chsl-linux-arm64.tar.gz"
+    sha256 "d98b873f3299887e658053ae1e912bdf99653b073d27dc2d54f5ed55e3a9a7b6"
   end
 
   def install
