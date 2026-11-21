@@ -11,23 +11,23 @@ class Chsl < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/Snesnopic/chisel/releases/download/v2.0.0/chsl-macos-arm64.tar.gz"
-      sha256 "aff0e16aeb1bc8b720fb2b99877e3900b67462e2ea800d2e9484baea53c8b2cc"
+      url "https://github.com/Snesnopic/chisel/releases/download/v2.0.1/chsl-macos-arm64.tar.gz"
+      sha256 "abbe5c24c0c46f91aad2e052515d535ba57af5cafb5cf66593f8f754bdff31b6"
     end
     on_intel do
-      url "https://github.com/Snesnopic/chisel/releases/download/v2.0.0/chsl-macos-x64.tar.gz"
-      sha256 "7d9e23fbb16d8f455b9f7eeec0b6ab05c0351cde8ff488c5a3d993e5bf2ebf69"
+      url "https://github.com/Snesnopic/chisel/releases/download/v2.0.1/chsl-macos-x64.tar.gz"
+      sha256 "7f14f8134d45d9214d4cdbffae25681cf5b54d0d96cf6a1998e4474e0070d77c"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/Snesnopic/chisel/releases/download/v2.0.0/chsl-linux-x64-gcc.tar.gz"
-      sha256 "60d8dd11af9c16db5d40e51fe5e2b9327d5eecdffe346618fc068ee5df17a532"
+      url "https://github.com/Snesnopic/chisel/releases/download/v2.0.1/chsl-linux-x64-gcc.tar.gz"
+      sha256 "186a3f83b1e6a80ad74761773fb14f051f6e340c6f5b08be88db6376e69bdf9e"
     end
     on_arm do
-      url "https://github.com/Snesnopic/chisel/releases/download/v2.0.0/chsl-linux-arm64.tar.gz"
-      sha256 "d98b873f3299887e658053ae1e912bdf99653b073d27dc2d54f5ed55e3a9a7b6"
+      url "https://github.com/Snesnopic/chisel/releases/download/v2.0.1/chsl-linux-arm64.tar.gz"
+      sha256 "c41152837c3b59ce6d9d73def15801f392cfbe77d7136254eed312776307b0f6"
     end
   end
 
