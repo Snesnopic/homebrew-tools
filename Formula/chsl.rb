@@ -46,6 +46,15 @@ class Chsl < Formula
     end
   end
 
+  def caveats
+    return unless OS.mac?
+
+    <<~EOS
+      A native macOS app is available too:
+        brew install --cask snesnopic/tools/chisel
+    EOS
+  end
+
   test do
     assert_match "chisel", shell_output("#{bin}/chsl --help")
   end
