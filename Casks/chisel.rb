@@ -12,6 +12,7 @@ cask "chisel" do
     strategy :github_latest
   end
 
+  depends_on formula: "snesnopic/tools/chsl"
   depends_on macos: :sonoma
 
   app "Chisel.app"
